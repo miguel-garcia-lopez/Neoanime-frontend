@@ -1,3 +1,4 @@
+/* Reset general */
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +6,88 @@
   font-family: sans-serif;
 }
 
-header{
-    width: 100%;
-    height: 65px;
-    background-color: black;
-        padding: 7px;      
+/* El header le da el fondo negro infinito a la pantalla */
+header {
+  width: 100%;
+  background-color: #0d0d0d; /* Un negro mate más premium */
+  padding: 12px 0; /* Espaciado arriba y abajo */
 }
-.logo{
-    display: flex;
-        align-items: center;
-            gap:18px;
-    height: -29px;
-width: auto
-        
+
+/* Contenedor optimizado para PC */
+.nav-contenedor {
+  width: 93%; /* Deja un margen seguro a los lados en pantallas medianas */
+  max-width: 1300px; /* Evita que los elementos se separen demasiado en monitores gigantes */
+  margin: 0 auto; /* Centra horizontalmente todo el bloque del menú */
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;
+    
 }
-ul{
-    display: flex;
-    align-items: center;
-    gap: 10px
-        
+
+/* El logo ahora tiene un tamaño fijo de escritorio */
+.logo {
+  height: 73px; /* Altura controlada para PC */
+  width: auto;
+  object-fit: contain;
 }
+
+/* Menú de navegación */
+ul {
+  display: flex;
+  align-items: center;
+  gap: 19px; /* Distancia ideal y fija entre enlaces en PC */
+  list-style-type: none; 
+  padding: 0;
+
+}
+
+/* Links dentro del menú */
+ul li a {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 22px; /* Tamaño de fuente estándar para web */
+  font-weight: 518;
+  transition: color 0.2s ease;
+}
+
+/* Efecto visual al pasar el mouse (indispensable en PC) */
+ul li a:hover {
+  color: #ff0055; /* Cambia al color de tu marca cuando el cursor pasa por encima */
+}
+
+/* Iconos de los menús */
+.icono {
+  width: 28px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Bloque del Buscador */
+.buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscador input {
+  width: 220px; /* Ancho fijo para la barra de búsqueda en PC */
+  padding: 6px 12px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+.buscador button {
+  padding: 6px 15px;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid #333;
+  border-left: none;
+  background-color: #ff0055; /* Color llamativo para el botón */
+  color: white;
+  cursor: pointer;
+}
+
