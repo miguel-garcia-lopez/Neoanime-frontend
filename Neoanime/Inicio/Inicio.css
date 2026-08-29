@@ -5,30 +5,53 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+
 header{
-  width: 100%;
-    background-color: black;
-  
-  
+width:100%;
+height: auto;
+background-color: black 
 }
 
-
-
-
-
-.logo{
-  display:flex;
-    justify-content: flex-start;
+nav{
+  display: flex;
   align-items: center;
-     width: 67%;
-       height: auto
+  justify-content: space-between;
+    gap:43px
 }
 ul{
   display: flex;
-    justify-content: flex-start;
-      align-items: center;  
-}
-.icono{
-  height: 27px
+    gap:67px
 }
 
+
+
+.buscador{
+  
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+input{
+  width: 307px;
+  height: 35px;
+  
+    
+}
+button{
+   
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.logo{
+ height: 89px
+}
+.icono{
+   height:  40px
+  
+}
