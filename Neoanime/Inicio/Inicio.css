@@ -5,27 +5,23 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
-
 header{
-width:100%;
+
 height: auto;
+  
 background-color: black 
 }
-
 nav{
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
-    gap:43px
+      gap:clamp(43px, 8vw, 100px)
 }
 ul{
   display: flex;
-    gap:67px
+    gap:clamp(70px, 8vw, 160px)
 }
-
-
-
 .buscador{
   
     margin-left: auto;
@@ -33,10 +29,8 @@ ul{
     align-items: center;
 }
 input{
-  width: 307px;
-  height: 35px;
-  
-    
+  width: clamp(369px, 30vw, 430px);
+  height: 35px; 
 }
 button{
    
@@ -45,13 +39,13 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.logo{
+height: clamp(80px, 8vw, 120px);
+ 
+}
+.icono{
+height: clamp(35px, 3vw, 50px);
   
 }
 
-.logo{
- height: 89px
-}
-.icono{
-   height:  40px
-  
-}
