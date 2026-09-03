@@ -30,12 +30,13 @@ ul{
 }
 input{
   width: clamp(369px, 30vw, 430px);
-  height: 35px; 
+  height:clamp(35px, 2vw, 50px);
+  max-width: 1900px
 }
 button{
    
     width: 35px;
-    height: 35px;
+    height: clamp(35px, 2vw, 50px);
     display: flex;
     justify-content: center;
     align-items: center;
