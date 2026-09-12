@@ -6,50 +6,14 @@
   font-family: sans-serif;
 }
 header{
-
-height: auto;
-background-color: black ;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+    background: black
 }
 nav{
-  
-  display: flex;
   align-items: center;
-  justify-content: center;
-      gap:clamp(43px, 8vw, 70px);
-
-}
-ul{
-  display: flex;
-    gap:clamp(70px, 8vw, 170px)
-}
-.buscador{
+  justify-content: center
+    
   
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-input{
-  width: clamp(369px, 30vw, 430px);
-  height:clamp(35px, 2vw, 50px);
-  max-width: 1910px
-}
-button{
-   
-    width: 35px;
-    height: clamp(35px, 2vw, 50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo{
-height: clamp(80px, 8vw, 120px);
-   justify-content: center;
- 
-}
-.icono{
-height: clamp(35px, 3vw, 50px);
   
 }
-
