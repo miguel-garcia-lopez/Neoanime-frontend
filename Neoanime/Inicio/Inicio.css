@@ -11,9 +11,27 @@ header{
     background: black
 }
 nav{
+  display: flex;
   align-items: center;
-  justify-content: center
-    
+  justify-content: center;
+   gap: clamp(50px,8vh,130px)
+}
+ul{
+  display: flex;
+    align-items:center;
+  justify-content: center;
+    gap:clamp(90px,8vh,130px)
+}
+.logo{
+  width:clamp(170px,8vh,300px);
+
+}
+.icono{
+  width:clamp(50px,8vh,80px);
+}
+input{
+  width:clamp(230px,8vh,50px);
+  
   
   
 }
