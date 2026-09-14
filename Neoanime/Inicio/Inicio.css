@@ -7,31 +7,41 @@
 }
 header{
   width: 100%;
-  height: auto;
-    background: black
+    height: auto;
+      background-color: black
 }
 nav{
   display: flex;
   align-items: center;
-  justify-content: center;
-   gap: clamp(50px,8vh,130px)
+    justify-content: center;
+      gap: clamp(30px,8vh,5px)
 }
 ul{
   display: flex;
-    align-items:center;
-  justify-content: center;
-    gap:clamp(90px,8vh,130px)
+  margin-right: auto;
+    gap: clamp(30px,8vh,5px)
+   
+  
 }
 .logo{
-  width:clamp(170px,8vh,300px);
-
+  width: clamp(130px,10vh,200px);
+      
 }
 .icono{
-  width:clamp(50px,8vh,80px);
+  width: clamp(17px,8vh,20px)
+}
+search{
+ display: flex; 
+  margin-right: auto
+
 }
 input{
-  width:clamp(230px,8vh,50px);
-  
-  
-  
+  width:clamp(286px,8vh,231px);
+    height: 29px;   
+}
+
+button{
+  align-items: stretch; 
+  width: 25px;
+
 }
