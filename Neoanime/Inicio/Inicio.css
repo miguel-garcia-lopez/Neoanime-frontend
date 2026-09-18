@@ -15,15 +15,32 @@ nav{
   display: flex;
   align-items: center;
     justify-content: center;
-      gap: clamp(80px,8vh,130px)
+      gap: clamp(80px,8vh,130px);
+  
+    
 }
 ul{
   display: flex;
-
-    gap: clamp(40px,8vh,100px)
-   
+ list-style: none;
+    gap: clamp(40px,8vh,100px);
+ 
   
 }
+li{
+  
+ list-style: none;
+  
+}
+a{
+   list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+
 .logo{
   width: clamp(130px,10vh,200px);
       
